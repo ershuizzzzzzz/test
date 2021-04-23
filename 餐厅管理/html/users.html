@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>餐厅系统</title>
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_2418128_lt650d721u.css">
+	<link rel="stylesheet" type="text/css" href="../css/users.css" />
+    <link rel="icon" href="../img/logo.png"/>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="navTop">
+                <span>餐厅管理系统</span>
+            </div>
+            <div class="person">
+                <div>欢迎</div>
+                <div class="name"></div>
+                <div class="logOut">退出登录<i class="iconfont icontuichudenglu1"></i></div>
+            </div>
+            <ul class="navList">
+                <li class="navItem">
+                    <a class="dishes" href="dishes.html" target="_self">
+                        <i class="iconfont iconnavicon-cpjh"></i>
+                        <span class="navFont">菜品管理</span>
+                    </a>
+                </li>
+                <li class="navItem">
+                    <a class="orders" href="orders.html" target="_self">
+                        <i class="iconfont icondingdanguanli"></i>
+                        <span class="navFont">订单管理</span>
+                    </a>
+                </li>
+                <li class="navItem">
+                    <a class="users" href="javascript:;" target="_self">
+                        <i class="iconfont iconyonghuguanli"></i>
+                        <span class="navFont">用户管理</span>
+                    </a>
+                </li>
+                <li class="navItem">
+                    <a class="setUp" href="set.html" target="_self">
+                        <i class="iconfont iconhuabanfuben"></i>
+                        <span class="navFont">用户设置</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="add">
+                <button class="searchBtn">搜索用户</button>
+                <span class="hideSearch">
+                    <input type="text" class="searchInput" placeholder="请输入用户名"/>
+                    <button class="searchYesBtn"><i class="iconfont iconsousuo"></i>搜索</button>
+                    <button class="returnBtn"><i class="iconfont iconzhongzhi"></i>重置</button>
+                </span>
+            </div>
+            <div class="showDishes">
+                <table class="inquireTable" cellspacing='0'>
+                    <thead class="inquireThead">
+                        <tr class="inquireTheadTr">
+                            <th>序号</th>
+                            <th>用户名</th>
+                            <th>电话</th>
+                            <th>性别</th>
+                            <th>年龄</th>
+                            <th>积分</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody class="inquireTbody">
+                    </tbody>
+                </table>
+            </div>
+            <div class="pages">
+                <button class="toFirstPageBtn"><i class="iconfont iconxiangzuofanye"></i></button>
+                <button class="toLastPageBtn"><i class="iconfont iconxiangyoufanye"></i></button>
+                <P>第<input type="text" value="1" class="toPage"/>页</P>
+                <div>共<span class="allPage"></span>页</div>
+                <button class="backPageBtn"><i class="iconfont iconshangyige"></i></button>
+                <button class="nextPageBtn"><i class="iconfont iconxiayige"></i></button>
+            </div>
+        </div> 
+    </div>
+    
+    <div class="hideDelete">
+        <div class="hideDeleteForm">
+            <div class="hideDeleteFormTop">
+                <h1>删除用户</h1>
+                <span><i class="iconfont iconguanbi" id="closeDelete"></i></span>
+            </div>
+            <div class="hideDeleteFormCenter">
+                <table class="deleteTable">
+                    <tbody>
+                        <tr class="deleteFormTr">
+                            <td class="firstTd">序号：</td>
+                            <td><span class="deleteInput"></span></td>
+                        </tr>
+                        <tr class="deleteFormTr">
+                            <td class="firstTd">用户名：</td>
+                            <td><span class="deleteInput"></span></td>
+                        </tr>
+                        <tr class="deleteFormTr">
+                            <td class="firstTd">手机号：</td>
+                            <td><span class="deleteInput"></span></td>
+                        </tr>
+                        <tr class="deleteFormTr">
+                            <td class="firstTd">性别：</td>
+                            <td><p class="deleteInput"></p></td>
+                        </tr>
+                        <tr class="deleteFormTr">
+                            <td class="firstTd">年龄：</td>
+                            <td><p class="deleteInput"></p></td>
+                        </tr>
+                        <tr class="deleteFormTr">
+                            <td class="firstTd">积分：</td>
+                            <td><p class="deleteInput"></p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="hideAddFormBottom">
+                <button class="deleteNoBtn">取 消</button>
+                <button class="deleteYesBtn">确 认</button>
+            </div>
+        </div>
+    </div>
+    <div class="hideChange">
+        <div class="hideChangeForm">
+            <div class="hideChangeFormTop">
+                <h1>修改信息</h1>
+                <span><i class="iconfont iconguanbi" id="closeChange"></i></span>
+            </div>
+            <div class="hideChangeFormCenter">
+                <table class="ChangeTable">
+                    <tbody>
+                        <tr class="ChangeFormTr">
+                            <td class="firstTd">序号：</td>
+                            <td><input type="text" class="ChangeInput" disabled style="border: none;"/></td>
+                        </tr>
+                        <tr class="ChangeFormTr">
+                            <td class="firstTd">用户名：</td>
+                            <td><input type="text" class="ChangeInput"/></td>
+                        </tr>
+                        <tr class="ChangeFormTr">
+                            <td class="firstTd">年龄：</td>
+                            <td><input type="text" class="ChangeInput"/></td>
+                        </tr>
+                        <tr class="ChangeFormTr">
+                            <td class="firstTd">性别：</td>
+                            <td>
+                                <select class='select'>
+                                    <option value='male'>男
+                                    <option value='female'>女
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="hideChangeFormBottom">
+                <button class="ChangeNoBtn">取 消</button>
+                <button class="ChangeYesBtn">确 认</button>
+            </div>
+        </div>
+    </div>
+    <div class="hideLogOut">
+        <div class="hideLogOutContent">
+            <h2 class="chooseLogOut">是否退出登录</h2>
+            <div class="logOutBtn">
+                <button class="logOutNoBtn">取 消</button>
+                <button class="logOutYesBtn">确 认</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/users.js"></script>
+</body>
+</html>

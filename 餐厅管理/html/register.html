@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册餐厅系统</title>
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_2418128_lt650d721u.css"/>
+    <link rel="stylesheet" type="text/css" href='../css/register.css' />
+    <link rel="icon" href="../img/logo.png"/>
+</head>
+<body>
+    <div class="login">
+        <div class="contentLogin">
+            <div class="content_wrap">
+                <div class="content-top">
+                    <div class="font">用户名</div>
+                    <input type="text" placeholder="请输入用户名" autocomplete="off" class="text"/>
+                    <div class="font" style="margin-top: 11px;">密码</div>
+                    <input type="password" placeholder="请输入密码" autocomplete="off" class="text"/>
+                    <i class="iconfont iconmimabukejian" id="eye"></i>
+                    <div class="font" style="margin-top: 11px;" id="email">
+                        <p>邮箱</p>
+                        <span class="wait"><p class="second"></p>秒后再次点击发送</span>
+                        <p class="clickSend">点击发送验证码</p>
+                    </div>
+                    <input type="email" placeholder="请输入邮箱" autocomplete="off" class="text"/>
+                    <div class="font" style="margin-top: 11px;">验证码</div>
+                    <input type="text" placeholder="请输入验证码" autocomplete="off" class="text"/>
+                </div>
+                <div class="content-bottom">
+                    <div class="font" id="errorCode">验证码错误！</div>
+                    <button class="loginBtn">注册</button>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <script src="../js/register.js"></script>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>餐厅系统</title>
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_2418128_lt650d721u.css">
+	<link rel="stylesheet" type="text/css" href="../css/set.css" />
+    <link rel="icon" href="../img/logo.png"/>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="navTop">
+                <span>餐厅管理系统</span>
+            </div>
+            <div class="person">
+                <div>欢迎</div>
+                <div class="name"></div>
+                <div class="logOut">退出登录<i class="iconfont icontuichudenglu1"></i></div>
+            </div>
+            <ul class="navList">
+                <li class="navItem">
+                    <a class="dishes" href="dishes.html" target="_self">
+                        <i class="iconfont iconnavicon-cpjh"></i>
+                        <span class="navFont">菜品管理</span>
+                    </a>
+                </li>
+                <li class="navItem">
+                    <a class="orders" href="orders.html" target="_self">
+                        <i class="iconfont icondingdanguanli"></i>
+                        <span class="navFont">订单管理</span>
+                    </a>
+                </li>
+                <li class="navItem">
+                    <a class="users" href="users.html" target="_self">
+                        <i class="iconfont iconyonghuguanli"></i>
+                        <span class="navFont">用户管理</span>
+                    </a>
+                </li>
+                <li class="navItem">
+                    <a class="setUp"  href="javascript:;" target="_self">
+                        <i class="iconfont iconhuabanfuben"  style="color: white;"></i>
+                        <span class="navFont" style="color: white;">用户设置</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="contentTop">
+                <h2>修改个人信息</h2>
+            </div>
+            <div class="contentForm">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="firstTd">用户名：</td>
+                            <td class="secondTd"></td>
+                        </tr>
+                        <tr>
+                            <td class="firstTd">手机号：</td>
+                            <td class="secondTd"></td>
+                        </tr>
+                        <tr>
+                            <td class="firstTd">年龄：</td>
+                            <td class="secondTd"></td>
+                        </tr>
+                        <tr>
+                            <td class="firstTd">性别：</td>
+                            <td class="secondTd">
+                                <select>
+                                    <option>男</option>
+                                    <option>女</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="contentBottom">
+                    <button class="changeNoBtn">取 消</button>
+                    <button class="changeBtn">修 改</button>
+                    <button class="changeYesBtn">确 认</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="hideLogOut">
+        <div class="hideLogOutContent">
+            <h2 class="chooseLogOut">是否退出登录</h2>
+            <div class="logOutBtn">
+                <button class="logOutNoBtn">取 消</button>
+                <button class="logOutYesBtn">确 认</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/set.js"></script>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+</body>
+</html>

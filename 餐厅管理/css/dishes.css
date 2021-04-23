@@ -1,0 +1,406 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+html,body{
+    height: 100%;
+}
+.main{
+    display: flex;
+    height: 100%;
+    min-width: 1200px;
+}
+.nav{
+    background-color: #4D5E70;
+    min-width: 200px;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+}
+.content{
+    flex-grow: 1;
+    margin-left: 200px;
+    height: 100%;
+    background-color: #EFF3F6;
+    overflow: auto;
+}
+.navTop{
+    background-color: #354457;
+    width: 100%;
+    height: 70px;
+    display: inline-block;
+    text-align: center;
+}
+.navTop>span{
+    color: white;
+    font-size: 17px;
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+}
+.person{
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0px 10px 15px;
+}
+.person>div{
+    color: #B3BCC5;
+}
+.logOut{
+    font-size: 10px;
+    margin-top: 25px;
+    display: inline-block;
+}
+.logOut:hover{
+    cursor: pointer;
+}
+.iconfont{
+    color: #B3BCC5;
+    font-size: 19px;
+}
+.navFont{
+    color: #B3BCC5;
+    font-size: 16px;
+    font-weight: 300;
+}
+.navItem>a{
+    display: block;
+    padding: 13px 0px;
+    text-decoration: none;
+}
+.navItem{
+    padding-left: 15px;
+}
+.navList{
+    padding-left: 15px;
+    list-style: none;
+    padding-left: 0px;
+}
+.navItem:nth-child(1){
+    background-color: #3D4E60;
+    border-right: solid 4px #647f9d;
+    border-bottom: 1px solid #354457;
+}
+.dishes i,.dishes span{
+    color: white;
+}
+
+.add{
+    height: 70px;
+    padding-left: 30px;
+    line-height: 70px;
+    background-color: white;
+}
+.addBtn,.searchBtn,.returnBtn,.searchYesBtn{
+    padding: 6px 9px;
+    font-size: 16px;
+    border-radius: 3px;
+    background-color: white;
+    outline: none;
+    color: #eab67c;
+    border: 1px solid #eab67c;
+}
+.addBtn:hover{
+    cursor: pointer;
+}
+.hideAdd,.hideDelete,.hideChange{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+}
+.hideAddForm,.hideDeleteForm,.hideChangeForm{
+    opacity: 0;
+    transition: 0.5s;
+    box-shadow: 0px 0px 15px #515151;
+    display: inline-block;
+    background-color: white;
+    position: relative;
+    top: -210px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 7px;
+    width: 400px;
+    height: 400px;
+}
+
+.hideAddFormTop>h1,.hideDeleteFormTop>h1,.hideChangeFormTop>h1{
+    color: #4B4B4B;
+}
+.hideAddFormTop>span,.hideDeleteFormTop>span,.hideChangeFormTop>sapn{
+    line-height: 42.67px;
+}
+.hideAddFormTop,.hideDeleteFormTop,.hideChangeFormTop{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: solid 1px #e5e5e5;
+}
+.firstTd{
+    text-align: right;
+    color: #515151;
+    position: relative;
+    bottom: 2px;
+}
+.addInput,.deleteInput,.ChangeInput,#ChangeInput{
+    outline: none;
+    border-radius: 3px;
+    height: 25px;
+    width: 200px;
+    border:solid 1px #BDC3C7;
+    transition: 0.5s;
+}
+
+.addTable,.deleteTable,.ChangeTable{
+    border-spacing: 0px 20px;
+    border-collapse: separate;
+}
+.hideAddFormCenter,.hideDeleteFormCenter,.hideChangeFormCenter{
+    padding: 10px 38px;
+    border-bottom: solid 1px #e5e5e5;
+}
+.addNoBtn,.addYesBtn,.deleteNoBtn,.deleteYesBtn,.ChangeNoBtn,.ChangeYesBtn,.logOutYesBtn,.logOutNoBtn{
+    outline: none;
+    border: solid 1px #e5e5e5;
+    padding: 6px 9px;
+    font-size: 12px;
+    background-color: white;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.addYesBtn,.deleteYesBtn,.ChangeYesBtn,.logOutYesBtn{
+    background-color: #529373;
+    color: white;
+}
+.hideAddFormBottom,.hideDeleteFormBottom,.hideChangeFormBottom{
+    height: 55px;
+    line-height: 55px;
+    float: right;
+}
+button:hover{
+    cursor: pointer;
+}
+.addNoBtn:hover,.addYesBtn:hover,.deleteYesBtn:hover,.deleteNoBtn:hover{
+    cursor: pointer;
+}
+.hideAdd,.hideDelete{
+    display: none;
+}
+.hideAddForm,.hideDeleteForm{
+    opacity: 0;
+    transition: 0.5s;
+}
+.iconguanbi:hover{
+    cursor: pointer;
+}
+.inquireThead{
+    background-color: #E3E8EE;
+    display: block;
+    width: 100%;
+    height: 35px;
+}
+.inquireTable{
+    display: block;
+    width: 100%;
+}
+.inquireTheadTr{
+    height: 35px;
+    line-height: 35px;
+    font-size: 17px;
+    color: #646987;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.inquireTheadTr>th{
+    width: 192px;
+    
+}
+.inquireTbody{
+    width: 100%;
+    border-spacing: 0px 10px;
+    display: table;
+    margin-top: 10px;
+}
+.inquireTbodyTr{
+    background-color: white;
+    height: 51px;
+    font-size: 20px;
+}
+.inquireTbodyTr td{
+    text-align: center;
+    width: 192px;
+    color: #9095ab;
+}
+.changeBtn,.deleteBtn{
+    padding: 2px 4px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 3px;
+}
+.changeBtn:hover,.deleteBtn:hover{
+    cursor: pointer;
+}
+.changeBtn{
+    background-color: #2ECC71;
+    margin-right: 4px;
+}
+.deleteBtn{
+    background-color: #E74C3C;
+}
+.pages{
+    display: inline-flex;
+    margin: 20px 30px 20px 0px;
+    float: right;
+    color: #b7b7b7;
+    font-size: 20px;
+}
+.toPage{
+    color: #b7b7b7;
+    width: 25px;
+    outline: none;
+    border: solid 1px #b7b7b7;
+    text-align: center;
+    font-size: 18px;
+}
+.pages>p,.pages>div{
+    margin-right: 5px;
+}
+.backPageBtn{
+    opacity: 0.3;
+    margin-right: 5px;
+}
+.backPageBtn,.nextPageBtn,.toFirstPageBtn,.toLastPageBtn{
+    outline: none;
+    background-color: white;
+    border: none;
+    padding: 0px 2px;
+}
+.toFirstPageBtn,.toLastPageBtn{
+    margin-right: 5px;
+}
+.toFirstPageBtn{
+    opacity: 0.3;
+}
+.backPageBtn:hover,.nextPageBtn:hover{
+    cursor: pointer;
+}
+.iconshangyige,.iconxiayige,.iconxiangzuofanye,.iconxiangyoufanye{
+    color: #00BDEF;
+    font-size: 20px;
+    font-weight: 700;
+}
+.iconxiangzuofanye,.iconxiangyoufanye{
+    font-weight: 500;
+}
+.alertNum{
+    display: inline-block;
+    font-size: 12px;
+    color: red;
+    position: absolute;
+    bottom: 68px;
+    left: 105px;
+    visibility: hidden;
+}
+.hideDeleteForm{
+    height: 400px;
+}
+.deleteInput{
+    border: none;
+    padding: 0px;
+    display: inline-block;
+    width: 247px;
+    content: " ";
+    font-size: 14px;
+    color: #5F5F5F;
+}
+.deleteYesBtn{
+    background-color: #E74C3C;
+}
+.hideChangeForm{
+    height: 444px;
+}
+.hideChange{
+    display: none;
+}
+#ChangeInput{
+    width: 202px;
+    height: 23px;
+    display: inline-block;
+    border: none;
+}
+.searchBtn{
+    margin-right: 0px;
+}
+.searchInput{
+    width: 200px;
+    height: 33px;
+    border: solid 1px #eab67c;
+    outline: none;
+    font-size: 16px;
+}
+.iconzhongzhi,.iconsousuo{
+    font-size: 14px;
+}
+.hideSearch{
+    display: none;
+    position: relative;
+    bottom: 52px;
+    transition: 1s;
+}
+.none{
+    font-size: 25px;
+    font-family: Kaiti;
+}
+.alertPriceNum,.addAlertPriceNum{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    visibility: hidden;
+}
+.icontuichudenglu1{
+    position: absolute;
+    font-size: 15px;
+}
+.logOut:hover{
+    color: white;
+}
+.logOut:hover .icontuichudenglu1{
+    color: white;
+}
+.hideLogOut{
+    position: fixed;
+    background: rgba(0,0,0,.3);
+    content: " ";
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.hideLogOutContent{
+    background-color: white;
+    content: " ";
+    width: 400px;
+    height: 135px;
+    position: absolute;
+    top: -140px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 13px black;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.chooseLogOut{
+    margin-top: 40px;
+    text-align: center;
+}
+.logOutBtn{
+    text-align: right;
+    margin-top: 14px;
+}

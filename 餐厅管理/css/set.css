@@ -1,0 +1,227 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+button:hover{
+    cursor: pointer;
+}
+html,body{
+    height: 100%;
+}
+.main{
+    display: flex;
+    height: 100%;
+    min-width: 1200px;
+}
+.nav{
+    background-color: #4D5E70;
+    min-width: 200px;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+}
+.content{
+    flex-grow: 1;
+    margin-left: 200px;
+    height: 100%;
+    background-color: #EFF3F6;
+    overflow: hidden;
+}
+.navTop{
+    background-color: #354457;
+    width: 100%;
+    height: 70px;
+    display: inline-block;
+    text-align: center;
+}
+.navTop>span{
+    color: white;
+    font-size: 17px;
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+}
+.person{
+    display: inline-block;
+    width: 170px;
+    height: 100px;
+    padding: 10px 15px 10px 15px;
+    border-bottom: 1px solid #354457;
+}
+.person>div{
+    color: #B3BCC5;
+}
+.logOut{
+    font-size: 10px;
+    margin-top: 25px;
+    display: inline-block;
+}
+.logOut:hover{
+    cursor: pointer;
+}
+.iconfont{
+    color: #B3BCC5;
+    font-size: 19px;
+}
+.navFont{
+    color: #B3BCC5;
+    font-size: 16px;
+    font-weight: 300;
+}
+.navItem>a{
+    display: block;
+    padding: 13px 0px;
+    text-decoration: none;
+}
+.navItem{
+    padding-left: 15px;
+}
+.navList{
+    padding-left: 15px;
+    list-style: none;
+    padding-left: 0px;
+}
+.navItem:nth-child(4){
+    background-color: #3D4E60;
+    border-right: solid 4px #647f9d;
+    color: white;
+}
+
+.contentTop{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background-color: white;
+    padding-left: 30px;
+}
+h2{
+    color: #354457;
+}
+.contentForm{
+    width: 360px;
+    height: 266px;
+    background-color: white;
+    content: " ";
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+}
+table{
+    border-spacing: 0px 20px;
+    border-collapse: separate;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+}
+.firstTd{
+    text-align: right;
+    color: #515151;
+}
+.input{
+    outline: none;
+    border-radius: 3px;
+    height: 25px;
+    width: 200px;
+    border: solid 1px #BDC3C7;
+    transition: 0.5s;
+}
+.secondTd{
+    height: 27px;
+    width: 260px;
+}
+#input{
+    color: #BDC3C7;
+}
+.changeBtn,.changeYesBtn,.changeNoBtn{
+    height: 30px;
+    outline: none;
+    border: solid 1px #e5e5e5;
+    padding: 6px 9px;
+    font-size: 12px;
+    background-color: white;
+    border-radius: 3px;
+    margin-right: 10px;
+    background-color: #529373;
+    color: white;
+    position: relative;
+    top: 12px;
+}
+.contentBottom{
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+}
+.changeNoBtn{
+    background-color: white;
+    color: grey;
+    visibility: hidden;
+}
+.changeYesBtn{
+    display: none;
+}
+button{
+    position: relative;
+    left: 230px;
+}
+select{
+    outline: none;
+}
+
+.icontuichudenglu1{
+    position: absolute;
+    font-size: 15px;
+}
+.logOut:hover{
+    color: white;
+}
+.logOut:hover .icontuichudenglu1{
+    color: white;
+}
+.hideLogOut{
+    position: fixed;
+    background: rgba(0,0,0,.3);
+    content: " ";
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.hideLogOutContent{
+    background-color: white;
+    content: " ";
+    width: 400px;
+    height: 135px;
+    position: absolute;
+    top: -140px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 13px black;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.chooseLogOut{
+    margin-top: 40px;
+    text-align: center;
+}
+.logOutBtn{
+    margin-top: 14px;
+}
+.logOutNoBtn,.logOutYesBtn{
+    outline: none;
+    border: solid 1px #e5e5e5;
+    padding: 6px 9px;
+    font-size: 12px;
+    background-color: white;
+    border-radius: 3px;
+    margin-right: 10px;
+    position: relative;
+    left: 280px;
+}
+.logOutYesBtn{
+    background-color: #529373;
+    color: white;
+}
