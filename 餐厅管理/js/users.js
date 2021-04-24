@@ -1,7 +1,7 @@
 window.onload = function(){
     if(localStorage.getItem('userName') == null){
         window.location = 'login.html';
-    }
+    } 
     //欢迎的用户名字
     var name = document.getElementsByClassName('name')[0];
     var lastname = localStorage.getItem("registerName");
@@ -419,7 +419,7 @@ window.onload = function(){
                 url:'http://118.195.129.130:3000/users/update_users',
                 type:'post',
                 data:{
-                    name:ChangeInput[1].value,
+                    us:ChangeInput[1].value,
                     age:ChangeInput[2].value,
                     sex:sex,
                     _id:usersId[ev.target.parentNode.parentNode.getElementsByTagName('td')[1].children[0].value-1],
@@ -436,7 +436,22 @@ window.onload = function(){
                         }else{
                             inquireTbodyTr[ev.target.parentNode.parentNode.getElementsByTagName('td')[1].children[0].value-1].children[3].innerHTML = '女';
                         }
-
+                        //增加积分
+                        $.ajax({
+                            url:"http://118.195.129.130:3000/users/integral",
+                            data:{
+                                us:ChangeInput[1].value,
+                                age:ChangeInput[2].value,
+                                sex:sex,
+                                integral:ChangeInput[3].value,
+                            },
+                            success:function(data){
+                                inquireTbodyTr[ev.target.parentNode.parentNode.getElementsByTagName('td')[1].children[0].value-1].children[3].innerHTML += ChangeInput[3].value;
+                            },
+                            error:function(){
+                                console.log(data)
+                            }
+                        })
                         closeChangeForm();
                     }
                     console.log(data)

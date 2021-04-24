@@ -83,7 +83,7 @@ window.onload = function(){
             },
             success:function(data){
                 contentForm.style.boxShadow = '0px 0px 15px #707070';
-                contentForm.style.transform = 'translate(' +  -50 + '%,'+ -170 + 'px)';
+                contentForm.style.transform = 'translate(' +  -50 + '%,'+ -190 + 'px)';
                 for(let i = 0;i < 3;i++){
                     secondTd[i].innerHTML = "<input type='text' class='input'/>"
                 }
@@ -163,7 +163,7 @@ window.onload = function(){
                     changeBtn.style.display = 'block';
                     changeNoBtn.style.visibility = 'hidden';
                     contentForm.style.boxShadow = 'none';
-                    contentForm.style.transform = 'translate(' +  -50 + '%,'+ -150 + 'px)';
+                    contentForm.style.transform = 'translate(' +  -50 + '%,'+ -190 + 'px)';
                 }
             },
             error:function(){

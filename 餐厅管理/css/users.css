@@ -3,12 +3,15 @@
     padding: 0px;
     user-select: none;
 }
+input{
+    text-indent: 6px;
+}
 button:hover{
     cursor: pointer;
 }
 html,body{
     height: 100%;
-}
+} 
 .main{
     display: flex;
     height: 100%;
@@ -298,6 +301,8 @@ button:hover{
     color: white;
     font-size: 16px;
     border-radius: 3px;
+    height: 30px;
+    width: 50px;
 }
 .changeBtn:hover,.deleteBtn:hover{
     cursor: pointer;
@@ -379,7 +384,7 @@ button:hover{
     background-color: #E74C3C;
 }
 .hideChangeForm{
-    height: 343Px;
+    height: 400Px;
 }
 .hideChange{
     display: none;
@@ -418,4 +423,11 @@ button:hover{
     font-size: 12px;
     position: absolute;
     visibility: hidden;
+}
+.select{
+    outline: none;
+    border-radius: 3px;
+    height: 25px;
+    width: 200px;
+    border: solid 1px #BDC3C7;
 }

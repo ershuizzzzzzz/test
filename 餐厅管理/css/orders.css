@@ -3,6 +3,9 @@
     padding: 0px;
     user-select: none;
 }
+input{
+    text-indent: 6px;
+}
 html,body{
     height: 100%;
 }
@@ -245,6 +248,8 @@ button:hover{
     color: white;
     font-size: 16px;
     border-radius: 3px;
+    height: 30px;
+    width: 50px;
 }
 .changeBtn:hover,.deleteBtn:hover{
     cursor: pointer;
